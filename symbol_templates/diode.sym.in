@@ -1,0 +1,45 @@
+v 20130925 2
+L 400 600 0 600 3 0 0 0 -1 -1
+L 400 600 200 300 3 0 0 0 -1 -1
+L 200 300 0 600 3 0 0 0 -1 -1
+L 400 300 0 300 3 0 0 0 -1 -1
+P 200 900 200 700 1 0 0
+{
+T 300 700 5 8 1 1 0 0 1
+pinnumber=@p1@
+T 300 1000 5 8 0 0 0 0 1
+pinseq=@ps1@
+T 150 700 5 8 0 1 0 6 1
+pinlabel=A
+T 300 -200 5 8 0 1 0 0 1
+pintype=pas
+}
+P 200 0 200 200 1 0 0
+{
+T 300 100 5 8 1 1 0 0 1
+pinnumber=@p2@
+T 300 -100 5 8 0 0 0 0 1
+pinseq=@ps2@
+T 150 100 5 8 0 1 0 6 1
+pinlabel=K
+T 300 900 5 8 0 1 0 0 1
+pintype=pas
+}
+L 200 200 200 300 3 0 0 0 -1 -1
+L 200 600 200 700 3 0 0 0 -1 -1
+T 400 500 8 10 1 1 0 0 1
+refdes=D?
+T 1400 1000 5 10 0 0 0 0 1
+footprint=@footprint@
+T 1400 800 5 10 0 0 0 0 1
+vendor=@vendor@
+T 1400 600 5 10 0 0 0 0 1
+description=@description@
+T 1400 400 5 10 0 0 0 0 1
+documentation=@documentation@
+T 400 300 5 10 1 1 0 0 1
+device=@device@
+T 1400 200 5 10 0 0 0 0 1
+manufacturer=@manufacturer@
+T 1400 0 5 10 0 0 0 0 1
+value=@value@

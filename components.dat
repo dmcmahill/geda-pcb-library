@@ -1,0 +1,301 @@
+# Copyright (C) 2009, 2010, 2017, 2019 Dan McMahill
+# All rights reserved.
+#
+# 
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; version 2 of the License.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+
+# part | template | value | pkg | pinout | [pinseq] | Comments | Vendor
+#
+# The pin out is given as a comma sep. list of the footprint pin numbers in the order give in the symbol.
+# For example, the symbol will have pins marked as @p1@ @p2@ @p3@.  Then in this file you might list the
+# pinout as 2,1,3.  This means:
+#
+#   symbol pin @p1@ -> footprint pin 2
+#   symbol pin @p2@ -> footprint pin 1
+#   symbol pin @p3@ -> footprint pin 3
+#
+# By default the pin sequence will match the symbol template order.
+#
+#   symbol pin @ps1@ has pin sequence = 1
+#   symbol pin @ps2@ has pin sequence = 2
+#   etc.
+#
+# This may be overridden by specifying the pinseq value here in the same
+# way as the pinout
+
+
+######################################################################
+#
+# Mechanical elements
+#
+
+# Mounting holes
+MT-4-40-pan-loose-M	| mthole.sym.in	|4-40|MTGP610H370V6M  |1 | | 4-40 mounting hole, plated, pan head, loose |
+MT-4-40-washer-loose-M	| mthole.sym.in	|4-40|MTGP1010H370V8M |1 | | 4-40 mounting hole, plated, washer, loose |
+MT-4-40-pan-tight-M	| mthole.sym.in	|4-40|MTGP570H330V6M  |1 | | 4-40 mounting hole, plated, pan head, tight |
+MT-4-40-washer-tight-M	| mthole.sym.in	|4-40|MTGP970H330V8M  |1 | | 4-40 mounting hole, plated, washer, tight |
+
+######################################################################
+#
+# LM1496 double balanced mixers
+#
+
+# National Semiconductor LM1496/LM1596 double balanced mixer
+LM1496M		|LM1496.sym.in	||SO14		| 1,2,3,4,5,6,8,10,12,14				| | 0-70 Deg. C	| National Semiconductor
+LM1496N		|LM1496.sym.in	||DIP14		| 1,2,3,4,5,6,8,10,12,14				| | 0-70 Deg. C	| National Semiconductor
+LM1496H		|LM1496.sym.in	||metalcan	| 1,2,3,4,5,6,7,8,9,10					| | 0-70 Deg. C	| National Semiconductor
+LM1596M		|LM1496.sym.in	||SO14		| 1,2,3,4,5,6,8,10,12,14				| | -55-125 Deg C	| National Semiconductor
+LM1596N		|LM1496.sym.in	||DIP14		| 1,2,3,4,5,6,8,10,12,14				| | -55-125 Deg C	| National Semiconductor
+LM1596H		|LM1496.sym.in	||metalcan	| 1,2,3,4,5,6,7,8,9,10					| | -55-125 Deg C	| National Semiconductor
+
+# On Semiconductor MC1496B (-40 to +125 Degrees C)
+MC1496BD	|LM1496.sym.in	||SO14		| 1,2,3,4,5,6,8,10,12,14				| | 		| On Semiconductor
+MC1496BDG	|LM1496.sym.in	||SO14		| 1,2,3,4,5,6,8,10,12,14				| | Pb-Free	| On Semiconductor
+MC1496BP	|LM1496.sym.in	||DIP14		| 1,2,3,4,5,6,8,10,12,14				| | 		| On Semiconductor
+MC1496BPG	|LM1496.sym.in	||DIP14		| 1,2,3,4,5,6,8,10,12,14				| | Pb-Free	| On Semiconductor
+
+# On Semiconductor MC1496 (0 to +70 Degrees C)
+MC1496D		|LM1496.sym.in	||SO14		| 1,2,3,4,5,6,8,10,12,14				| | 		| On Semiconductor
+MC1496DG	|LM1496.sym.in	||SO14		| 1,2,3,4,5,6,8,10,12,14				| | Pb-Free	| On Semiconductor
+MC1496P		|LM1496.sym.in	||DIP14		| 1,2,3,4,5,6,8,10,12,14				| | 		| On Semiconductor
+MC1496PG	|LM1496.sym.in	||DIP14		| 1,2,3,4,5,6,8,10,12,14				| | Pb-Free	| On Semiconductor
+
+######################################################################
+#
+# LM78xx voltage regulators
+#
+
+# vreg_3pin_tab.sym.in:  in, ground, out, case (ground)
+LM340T-12	|vreg_3pin_tab.sym.in ||TO220		| 1,2,3,4 | | 		| Texas Instruments
+LM340SX-12	|vreg_3pin_tab.sym.in ||TO263		| 1,2,3,4 | | 		| Texas Instruments
+LM7812CT	|vreg_3pin_tab.sym.in ||TO220		| 1,2,3,4 | | 		| Texas Instruments
+
+######################################################################
+#
+# LM79xx voltage regulators
+#
+
+# vreg_3pin_tab_neg.sym.in:  in, ground, out, case (in)
+LM2990SX-12	|vreg_3pin_tab_neg.sym.in ||TO263		| 2,1,3,4 | | 		| Texas Instruments
+
+######################################################################
+#
+# Maxim Integrated Circuits
+#
+
+# MAX882/883/884 5V/3.3V or Adjustable, Low-Dropout , Low IQ, 200 mA
+# Linear Regulators
+MAX882CPA |MAX882.sym.in || DIP8	| | | | Maxim Integrated Circuits
+MAX882CSA |MAX882.sym.in || SO8	| | | | Maxim Integrated Circuits
+MAX882EPA |MAX882.sym.in || DIP8	| | | | Maxim Integrated Circuits
+MAX882ESA |MAX882.sym.in || SO8	| | | | Maxim Integrated Circuits
+
+MAX883CPA |MAX882.sym.in || DIP8	| | | | Maxim Integrated Circuits
+MAX883CSA |MAX882.sym.in || SO8	| | | | Maxim Integrated Circuits
+MAX883EPA |MAX882.sym.in || DIP8	| | | | Maxim Integrated Circuits
+MAX883ESA |MAX882.sym.in || SO8	| | | | Maxim Integrated Circuits
+
+MAX884CPA |MAX882.sym.in || DIP8	| | | | Maxim Integrated Circuits
+MAX884CSA |MAX882.sym.in || SO8	| | | | Maxim Integrated Circuits
+MAX884EPA |MAX882.sym.in || DIP8	| | | | Maxim Integrated Circuits
+MAX884ESA |MAX882.sym.in || SO8	| | | | Maxim Integrated Circuits
+
+
+# MAX4364/4365 1.4W and 1W, Ultra-Small, Audio Power Amplifiers 
+# with Shutdown
+MAX4364ESA |MAX4364.sym.in || SO8 | | | | Maxim Integrated Circuits
+MAX4365EUA |MAX4364.sym.in || UMAX8 | 7,1,2,4,5,6,3,8 | | | Maxim Integrated Circuits
+MAX4365ETA |MAX4364-ep.sym.in || TDFN8_EP | 7,1,2,4,5,6,3,8,9 | | | Maxim Integrated Circuits
+
+# MAX9716/9717 Low-Cost, Mono, 1.4W BTL Audio Power Amplifiers
+MAX9716ETA |MAX9716.sym.in || TDFN8_EP | | | | Maxim Integrated Circuits
+MAX9716EBL |MAX9716.sym.in || UCSP_3X3 | C3,C1,A3,A1,A2,B3,B1,C2,B2 | | | Maxim Integrated Circuits
+MAX9716EUA |MAX9716.sym.in || UMAX8_EP | | | | Maxim Integrated Circuits
+
+MAX9717AETA |MAX9717.sym.in || TDFN8_EP | | | | Maxim Integrated Circuits
+MAX9717AEBL |MAX9717.sym.in || UCSP_3X3 | C3,C1,A3,A1,A2,B3,B1,C2,B2 | | | Maxim Integrated Circuits
+MAX9717AEUA |MAX9717.sym.in || UMAX8_EP | | | | Maxim Integrated Circuits
+MAX9717BETA |MAX9717.sym.in || TDFN8_EP | | | | Maxim Integrated Circuits
+MAX9717BEBL |MAX9717.sym.in || UCSP_3X3 | C3,C1,A3,A1,A2,B3,B1,C2,B2 | | | Maxim Integrated Circuits
+MAX9717BEUA |MAX9717.sym.in || UMAX8_EP | | | | Maxim Integrated Circuits
+MAX9717CETA |MAX9717.sym.in || TDFN8_EP | | | | Maxim Integrated Circuits
+MAX9717CEBL |MAX9717.sym.in || UCSP_3X3 | C3,C1,A3,A1,A2,B3,B1,C2,B2 | | | Maxim Integrated Circuits
+MAX9717CEUA |MAX9717.sym.in || UMAX8_EP | | | | Maxim Integrated Circuits
+MAX9717DETA |MAX9717.sym.in || TDFN8_EP | | | | Maxim Integrated Circuits
+MAX9717DEBL |MAX9717.sym.in || UCSP_3X3 | C3,C1,A3,A1,A2,B3,B1,C2,B2 | | | Maxim Integrated Circuits
+MAX9717DEUA |MAX9717.sym.in || UMAX8_EP | | | | Maxim Integrated Circuits
+
+######################################################################
+#
+# National Semiconductor
+#
+
+# LM4951 Boomer Wide Voltage Range 1.8 Watt Audio Amplifier
+LM4951SD |LM4951.sym.in || NATIONAL_SDC10A   |1,2,3,5,6,7,9,10,11 | | | National Semiconductor
+LM4951TL  |LM4951.sym.in || NATIONAL_TLA09ZZA |C1,C3,A3,A1,A2,B1,B3,C2,B2 | | | National Semiconductor
+LM4951TLX |LM4951.sym.in || NATIONAL_TLA09ZZA |C1,C3,A3,A1,A2,B1,B3,C2,B2 | | | National Semiconductor
+
+######################################################################
+#
+# Radio Shack
+#
+
+# 1/8" Stereo Phone Jack
+radio-shack-274-0246 |radio_shack_274-0246.sym.in || ?? | | | | Radio Shack
+
+######################################################################
+#
+# Texas Instruments
+#
+
+# -------------------
+# opamp-pg-ofs.sym.in
+# -------------------
+# 1-channel op-amp with power + ground + 2 offset adjust pins
+# 1:inp, 2:inm, 3:out, 4:vcc+, 5:vcc-, 6:ofs1, 7:ofs2
+
+TL081ACD | opamp-pg-ofs.sym.in || SO8    |3,2,6,7,4,1,5 | | | Texas Instruments
+TL081ACP | opamp-pg-ofs.sym.in || DIP8   |3,2,6,7,4,1,5 | | | Texas Instruments
+
+######################################################################
+#
+# Toko
+#
+
+
+# symbol: 1 = A, 2 = B, 3,4,5 = no connects, 6,7  = case
+# 7P series, package pins 1,3 are used, the rest are nc/case
+TOKO_A119ANS_T1029Z  |inductor_var_nc3_case2.sym.in |4.7uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+TOKO_A119ANS_T1030Z  |inductor_var_nc3_case2.sym.in |5.6uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+TOKO_A119ANS_T1031Z  |inductor_var_nc3_case2.sym.in |6.8uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+TOKO_A119ANS_T1032Z  |inductor_var_nc3_case2.sym.in |8.2uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+TOKO_A119ANS_T1033Z  |inductor_var_nc3_case2.sym.in | 10uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+
+TOKO_A119ANS_T1034Z  |inductor_var_nc3_case2.sym.in |12uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+TOKO_A119ANS_T1035Z  |inductor_var_nc3_case2.sym.in |15uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+TOKO_A119ANS_T1036Z  |inductor_var_nc3_case2.sym.in |18uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+TOKO_A119ANS_T1037Z  |inductor_var_nc3_case2.sym.in |22uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+TOKO_A119ANS_T1038Z  |inductor_var_nc3_case2.sym.in |27uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+
+TOKO_A119ANS_T1039Z  |inductor_var_nc3_case2.sym.in |33uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+TOKO_A119ANS_T1040Z  |inductor_var_nc3_case2.sym.in |39uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+TOKO_A119ANS_T1041Z  |inductor_var_nc3_case2.sym.in |47uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+TOKO_A119ANS_T1042Z  |inductor_var_nc3_case2.sym.in |56uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+TOKO_A119ANS_T1043Z  |inductor_var_nc3_case2.sym.in |68uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+
+TOKO_A119ANS_T1044Z  |inductor_var_nc3_case2.sym.in |82uH| TOKO_7P |1,3,2,4,6,7,8||           | Toko
+
+######################################################################
+#
+# Transistors
+#
+
+# 
+#         ___3___
+# SOT23: |_______|   <-- top view
+#         1     2
+#
+#
+#         ___x_
+#        /     \
+# TO18:  |3   1|     <-- bottom view (supposed to be a circle)
+#        \  2  /
+#          ---
+# NOTE:  Philips and ST number their TO-18's differently.
+#        I will use the JEDEC numbering which is what Philips uses.
+#
+#         ___x_
+#        /     \
+# TO39:  |3   1|     <-- bottom view (supposed to be a circle)
+#        \  2  /
+#          ---
+# NOTE:  Philips and ST number their TO-39's differently.
+#        I will use the JEDEC numbering which is what Philips uses.
+#
+#
+#         _______
+# TO92:  | 1 2 3 |   <-- bottom view
+#         \_____/
+# 
+#
+
+FMMT3904        |npn.sym.in || SOT23 | 3,1,2 ||           | Zetex
+MMBT3904L       |npn.sym.in || SOT23 | 3,1,2 ||           | On Semiconductor
+MMBT3904LG      |npn.sym.in || SOT23 | 3,1,2 ||           | On Semiconductor
+MMBT5179        |npn.sym.in || SOT23 | 3,1,2 ||           | Fairchild
+MPS5179         |npn.sym.in || TO92  | 3,2,1 ||           | Fairchild
+PN2222          |npn.sym.in || TO92  | 3,2,1 ||           | Fairchild Semiconductor
+PN5179          |npn.sym.in || TO92  | 3,1,2 ||           | Fairchild
+2N2218          |npn.sym.in || TO39  | 3,2,1 ||           | Philips
+2N2219          |npn.sym.in || TO39  | 3,2,1 ||           | Philips
+2N2219A         |npn.sym.in || TO39  | 3,2,1 ||           | Philips
+2N2221          |npn.sym.in || TO18  | 3,2,1 ||           | Philips
+2N2222          |npn.sym.in || TO18  | 3,2,1 ||           | Philips
+2N3903          |npn.sym.in || TO92  | 3,2,1 ||           | On Semiconductor
+2N3903G         |npn.sym.in || TO92  | 3,2,1 || Lead free | On Semiconductor
+2N3904          |npn.sym.in || TO92  | 3,2,1 ||           | On Semiconductor
+2N3904G         |npn.sym.in || TO92  | 3,2,1 || Lead free | On Semiconductor
+
+
+MMBT3906L       |pnp.sym.in || SOT23 | 3,1,2 ||           | On Semiconductor
+MMBT3906LG      |pnp.sym.in || SOT23 | 3,1,2 || Lead free | On Semiconductor
+FMMT3906        |pnp.sym.in || SOT23 | 3,1,2 ||           | Zetex
+2N2905          |pnp.sym.in || TO39  | 3,2,1 ||           | Philips
+2N2905A         |pnp.sym.in || TO39  | 3,2,1 ||           | Philips
+2N2907          |pnp.sym.in || TO18  | 3,2,1 ||           | Philips
+2N2907A         |pnp.sym.in || TO18  | 3,2,1 ||           | Philips
+2N3905          |pnp.sym.in || TO92  | 3,2,1 ||           | On Semiconductor
+2N3905G         |pnp.sym.in || TO92  | 3,2,1 || Lead free | On Semiconductor
+2N3906          |pnp.sym.in || TO92  | 3,2,1 ||           | On Semiconductor
+2N3906G         |pnp.sym.in || TO92  | 3,2,1 || Lead free | On Semiconductor
+
+#
+# Diodes
+#
+
+# symbol: 1 = anode, 2 = cathode
+MMBD914         |diode.sym.in || SOT23 |1,3  ||           | Fairchild
+MMBD914LT1G     |diode.sym.in || SOT23 |1,3  ||           | On Semiconductor
+MMBD914LT3G     |diode.sym.in || SOT23 |1,3  ||           | On Semiconductor
+
+1N4001          |diode.sym.in || DO41_H |2,1  || 50V/1A    | Diodes Inc
+1N4002          |diode.sym.in || DO41_H |2,1  || 100V/1A   | Diodes Inc
+1N4003          |diode.sym.in || DO41_H |2,1  || 200V/1A   | Diodes Inc
+1N4004          |diode.sym.in || DO41_H |2,1  || 400V/1A   | Diodes Inc
+1N4005          |diode.sym.in || DO41_H |2,1  || 600V/1A   | Diodes Inc
+1N4006          |diode.sym.in || DO41_H |2,1  || 800V/1A   | Diodes Inc
+1N4007          |diode.sym.in || DO41_H |2,1  || 1000V/1A  | Diodes Inc
+
+#
+# Zener Diodes
+#
+
+# symbol: 1 = anode, 2 = cathode
+
+# 2.5 3.3, 5.0, 6.0, 7.0, 12 V working voltages
+# SOD-523, CASE 502, STYLE 1
+ESD5Z2.5T1G     |zener.sym.in |2.5V| SOD523 |2,1  ||           | On Semiconductor
+ESD5Z3.3T1G     |zener.sym.in |3.3V| SOD523 |2,1  ||           | On Semiconductor
+ESD5Z5.0T1G     |zener.sym.in |5.0V| SOD523 |2,1  ||           | On Semiconductor
+ESD5Z6.0T1G     |zener.sym.in |6.0V| SOD523 |2,1  ||           | On Semiconductor
+ESD5Z7.0T1G     |zener.sym.in |7.0V| SOD523 |2,1  ||           | On Semiconductor
+ESD5Z12T1G      |zener.sym.in |12V | SOD523 |2,1  ||           | On Semiconductor
+
+ESD5Z2.5T5G     |zener.sym.in |2.5V| SOD523 |2,1  ||           | On Semiconductor
+ESD5Z3.3T5G     |zener.sym.in |3.3V| SOD523 |2,1  ||           | On Semiconductor
+ESD5Z5.0T5G     |zener.sym.in |5.0V| SOD523 |2,1  ||           | On Semiconductor
+ESD5Z6.0T5G     |zener.sym.in |6.0V| SOD523 |2,1  ||           | On Semiconductor
+ESD5Z7.0T5G     |zener.sym.in |7.0V| SOD523 |2,1  ||           | On Semiconductor
+ESD5Z12T5G      |zener.sym.in |12 V| SOD523 |2,1  ||           | On Semiconductor
+

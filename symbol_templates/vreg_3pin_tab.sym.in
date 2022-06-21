@@ -1,0 +1,46 @@
+v 20130925 2
+B 475 300 1050 600 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 475 950 5 10 1 1 0 0 1
+device=@device@
+P 475 700 200 700 1 0 1
+{
+T 450 750 5 8 1 1 0 6 1
+pinnumber=@p1@
+T 275 750 5 8 0 0 0 0 1
+pinseq=@ps1@
+T 475 700 5 10 1 1 0 1 1
+pinlabel=IN
+}
+P 1300 0 1300 300 1 0 0
+{
+T 1250 275 5 8 1 1 0 8 1
+pinnumber=@p2@
+T 1200 100 5 8 0 0 0 0 1
+pinseq=@ps2@
+T 1500 350 5 10 1 1 0 6 1
+pinlabel=GND
+}
+P 1525 700 1800 700 1 0 1
+{
+T 1555 750 5 8 1 1 0 0 1
+pinnumber=@p3@
+T 1655 750 5 8 0 0 0 0 1
+pinseq=@ps3@
+T 1525 700 5 10 1 1 0 7 1
+pinlabel=OUT
+}
+T 675 750 8 10 1 1 0 0 1
+refdes=U?
+P 700 0 700 300 1 0 0
+{
+T 650 275 5 8 1 1 0 8 1
+pinnumber=@p4@
+T 600 100 5 8 0 0 0 0 1
+pinseq=@ps4@
+T 500 350 5 10 1 1 0 0 1
+pinlabel=PGND
+}
+T 475 1050 5 10 0 0 0 0 1
+footprint=@footprint@
+T 475 1200 5 10 0 0 0 0 1
+description=@description@

@@ -1,0 +1,108 @@
+v 20090328 2
+P 300 1700 600 1700 1 0 0
+{
+T 500 1750 5 8 1 1 0 6 1
+pinnumber=@p5@
+T 500 1650 5 8 0 1 0 8 1
+pinseq=@ps5@
+T 650 1650 9 8 1 1 0 0 1
+pinlabel=IN
+T 650 1700 5 8 0 1 0 2 1
+pintype=in
+}
+B 600 600 1500 1700 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 2850 1750 5 10 0 0 0 0 1
+device=@device@
+T 650 2100 8 10 1 1 0 0 1
+refdes=U?
+T 2850 1300 5 10 0 0 0 0 1
+footprint=@footprint@
+T 2850 2150 5 10 0 0 0 0 1
+numslots=0
+T 2850 1950 5 10 0 0 0 0 1
+symversion=1.0
+T 2850 1100 5 10 0 0 0 0 1
+description=Low-Dropout, Low IQ, 200 mA Linear Regulator
+T 650 1940 9 10 1 1 0 0 1
+@device@
+P 300 1300 600 1300 1 0 0
+{
+T 500 1350 5 8 1 1 0 6 1
+pinnumber=@p7@
+T 500 1250 5 8 0 1 0 8 1
+pinseq=@ps7@
+T 650 1250 9 8 1 1 0 0 1
+pinlabel=\_OFF\_/\_STBY\_
+T 650 1300 5 8 0 1 0 2 1
+pintype=in
+}
+P 300 900 600 900 1 0 0
+{
+T 500 950 5 8 1 1 0 6 1
+pinnumber=@p8@
+T 500 850 5 8 0 1 0 8 1
+pinseq=@ps8@
+T 650 850 9 8 1 1 0 0 1
+pinlabel=LBI
+T 650 900 5 8 0 1 0 2 1
+pintype=in
+}
+P 1600 600 1600 300 1 0 1
+{
+T 1550 500 5 8 1 1 90 6 1
+pinnumber=@p3@
+T 1650 500 5 8 0 1 90 8 1
+pinseq=@ps3@
+T 1575 650 9 8 1 1 90 0 1
+pinlabel=GND
+T 1600 650 5 8 0 1 90 2 1
+pintype=pwr
+}
+T 2850 1550 5 10 0 0 0 0 1
+vendor=@vendor@
+T 2850 900 5 10 0 0 0 0 1
+documentation=http://datasheets.maxim-ic.com/en/ds/MAX882-MAX884.pdf
+P 1100 600 1100 300 1 0 1
+{
+T 1050 500 5 8 1 1 90 6 1
+pinnumber=@p6@
+T 1150 500 5 8 0 1 90 8 1
+pinseq=@ps6@
+T 1075 650 9 8 1 1 90 0 1
+pinlabel=GND
+T 1100 650 5 8 0 1 90 2 1
+pintype=pwr
+}
+P 2400 1700 2100 1700 1 0 0
+{
+T 2195 1745 5 8 1 1 0 0 1
+pinnumber=@p4@
+T 2200 1650 5 8 0 1 0 2 1
+pinseq=@ps4@
+T 2045 1695 9 8 1 1 0 6 1
+pinlabel=OUT
+T 2050 1700 5 8 0 1 0 8 1
+pintype=out
+}
+P 2400 1300 2100 1300 1 0 0
+{
+T 2195 1345 5 8 1 1 0 0 1
+pinnumber=@p1@
+T 2200 1250 5 8 0 1 0 2 1
+pinseq=@ps1@
+T 2045 1295 9 8 1 1 0 6 1
+pinlabel=\_LBO\_
+T 2050 1300 5 8 0 1 0 8 1
+pintype=oc
+}
+P 2400 900 2100 900 1 0 0
+{
+T 2195 945 5 8 1 1 0 0 1
+pinnumber=@p2@
+T 2200 850 5 8 0 1 0 2 1
+pinseq=@ps2@
+T 2045 895 9 8 1 1 0 6 1
+pinlabel=SET
+T 2050 900 5 8 0 1 0 8 1
+pintype=in
+}
