@@ -1,2 +1,7 @@
 *~
 gschem.log
+# stamp file used by the build system
+components-stamp
+
+# output directory
+symbols/
