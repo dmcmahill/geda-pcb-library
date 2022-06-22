@@ -59,3 +59,27 @@ that the pins are correct for the selected package.
 
 # Tool Links
 
+# Contributing
+
+## Overview
+The general method to contribute additions/corrections is:
+1. Fork the project in github.
+2. Make your changes on a branch.
+3. Submit a pull request.
+
+## Style Guide
+To be added
+
+## PR Required Information
+1. A link to any datasheets or standards to support the change.
+2. Indicate any change that may affect existing designs.  These need to
+be very carefully vetted.
+
+The general guideline about what types of changes may be in a single pull
+request versus breaking into multiple pull requests is how simple the changes
+are.  For example, if the change is adding eight new transistor types and they
+come in very standard packages, then this is ok to all go in a single pull
+request.  The impact is only for new designs and it is unlikely that only part
+of the pull request will be ok.  A change that modifies existing components
+or otherwise changes behavior should likely go in its own pull request.
+
