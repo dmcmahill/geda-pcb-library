@@ -14,7 +14,8 @@ SRC_DIR     ?= .
 SYMBOLS_DIR =  symbols
 
 # symbol templates
-SYM_SRCS    != ls ${SRC_DIR}/symbol_templates/*.sym.in
+#SYM_SRCS    != ls ${SRC_DIR}/symbol_templates/*.sym.in
+SYM_SRCS    = $(shell, ls ${SRC_DIR}/symbol_templates/*.sym.in)
 
 .PHONY: install
 install: all
