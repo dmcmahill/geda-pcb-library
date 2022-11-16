@@ -91,6 +91,36 @@ LM2990SX-12	|vreg_3pin_tab_neg.sym.in ||TO263		| 2,1,3,4 | | 		| Texas Instrumen
 
 ######################################################################
 #
+# Linear Tech (now part of Analog Devices)
+#
+
+# LT8300 100Vin Micropower Isolated Flyback Converter with 150V/260mA Switch
+# S5 Package is a 5-lead plastic TSOT-23
+LT8300ES5   |LT8300.sym.in || TSOT23_5 | | | | Analog Devices Powered by Linear
+LT8300IS5   |LT8300.sym.in || TSOT23_5 | | | | Analog Devices Powered by Linear
+LT8300HS5   |LT8300.sym.in || TSOT23_5 | | | | Analog Devices Powered by Linear
+LT8300MPS5  |LT8300.sym.in || TSOT23_5 | | | | Analog Devices Powered by Linear
+
+# LTC6090/LTC6090-5  140V CMOS Rail-to-Rail Output, Picoamp Input Current
+# Op Amp.  These use fairly customized symbols because they have some
+# special purpose pins that aren't the standard complement of op-amp pins.
+# Both the 8-lead SO package and the 16-lead TSSOP have an exposed paddle
+# that connectes to V-.  The TSSOP includes a number of guard pins.
+LTC6090CS8E   |opamp-ltc6090-8pin.sym.in || S8E | | | | Analog Devices Powered by Linear
+LTC6090IS8E   |opamp-ltc6090-8pin.sym.in || S8E | | | | Analog Devices Powered by Linear
+LTC6090HS8E   |opamp-ltc6090-8pin.sym.in || S8E | | | | Analog Devices Powered by Linear
+LTC6090CS8E-5 |opamp-ltc6090-8pin.sym.in || S8E | | | | Analog Devices Powered by Linear
+LTC6090IS8E-5 |opamp-ltc6090-8pin.sym.in || S8E | | | | Analog Devices Powered by Linear
+LTC6090HS8E-5 |opamp-ltc6090-8pin.sym.in || S8E | | | | Analog Devices Powered by Linear
+LTC6090CSFE   |opamp-ltc6090-16pin.sym.in || TSSOP16EP | | | | Analog Devices Powered by Linear
+LTC6090ISFE   |opamp-ltc6090-16pin.sym.in || TSSOP16EP | | | | Analog Devices Powered by Linear
+LTC6090HSFE   |opamp-ltc6090-16pin.sym.in || TSSOP16EP | | | | Analog Devices Powered by Linear
+LTC6090CSFE-5 |opamp-ltc6090-16pin.sym.in || TSSOP16EP | | | | Analog Devices Powered by Linear
+LTC6090ISFE-5 |opamp-ltc6090-16pin.sym.in || TSSOP16EP | | | | Analog Devices Powered by Linear
+LTC6090HSFE-5 |opamp-ltc6090-16pin.sym.in || TSSOP16EP | | | | Analog Devices Powered by Linear
+
+######################################################################
+#
 # Maxim Integrated Circuits
 #
 
