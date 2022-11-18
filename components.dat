@@ -315,11 +315,65 @@ MMBD914LT3G     |diode.sym.in || SOT23 |1,3  ||           | On Semiconductor
 1N4006          |diode.sym.in || DO41_H |2,1  || 800V/1A   | Diodes Inc
 1N4007          |diode.sym.in || DO41_H |2,1  || 1000V/1A  | Diodes Inc
 
-#
-# Zener Diodes
-#
+##
+## Zener Diodes
+##
 
 # symbol: 1 = anode, 2 = cathode
+
+# CMHZ5221B through CMHZ5267B
+#
+# Surface Mount Silicon Zener Diodes
+# 2.4V through 75V
+# 500mW, 5% tolerance
+# https://my.centralsemi.com/datasheets/CMHZ5225B-5267B.PDF
+CMHZ5221B       |zener.sym.in |2.4V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5222B       |zener.sym.in |2.5V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5223B       |zener.sym.in |2.7V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5224B       |zener.sym.in |2.8V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5225B       |zener.sym.in |3.0V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5226B       |zener.sym.in |3.3V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5227B       |zener.sym.in |3.6V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5228B       |zener.sym.in |3.9V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5229B       |zener.sym.in |4.3V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5230B       |zener.sym.in |4.7V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5231B       |zener.sym.in |5.1V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5232B       |zener.sym.in |5.6V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5233B       |zener.sym.in |6.0V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5234B       |zener.sym.in |6.2V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5235B       |zener.sym.in |6.8V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5236B       |zener.sym.in |7.5V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5237B       |zener.sym.in |8.2V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5238B       |zener.sym.in |8.7V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5239B       |zener.sym.in |9.1V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5240B       |zener.sym.in |10V | SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5241B       |zener.sym.in |11V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5242B       |zener.sym.in |12V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5243B       |zener.sym.in |13V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5244B       |zener.sym.in |14V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5245B       |zener.sym.in |15V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5246B       |zener.sym.in |16V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5247B       |zener.sym.in |17V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5248B       |zener.sym.in |18V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5249B       |zener.sym.in |19V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5250B       |zener.sym.in |20V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5251B       |zener.sym.in |22V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5252B       |zener.sym.in |24V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5253B       |zener.sym.in |25V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5254B       |zener.sym.in |27V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5255B       |zener.sym.in |28V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5256B       |zener.sym.in |30V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5257B       |zener.sym.in |33V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5258B       |zener.sym.in |36V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5259B       |zener.sym.in |39V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5260B       |zener.sym.in |43V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5261B       |zener.sym.in |47V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5262B       |zener.sym.in |51V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5263B       |zener.sym.in |56V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5264B       |zener.sym.in |60V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5265B       |zener.sym.in |62V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5266B       |zener.sym.in |68V| SOD123 |2,1  ||           | Central Semiconductor Corp
+CMHZ5267B       |zener.sym.in |75V| SOD123 |2,1  ||           | Central Semiconductor Corp
 
 # 2.5 3.3, 5.0, 6.0, 7.0, 12 V working voltages
 # SOD-523, CASE 502, STYLE 1
